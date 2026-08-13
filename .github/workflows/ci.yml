@@ -9,7 +9,9 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      # v4 runs on the node20 runtime, which GitHub has deprecated.
+      # v5 was the first major on node24; v7 is current.
+      - uses: actions/checkout@v7
 
       - uses: denoland/setup-deno@v2
         with:
