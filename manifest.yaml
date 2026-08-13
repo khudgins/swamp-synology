@@ -1,0 +1,23 @@
+manifestVersion: 1
+name: "@khudgins/synology"
+version: "2026.08.12.1"
+description: >-
+  Read-only Synology DSM shared-folder and volume-capacity inventory for swamp,
+  via the FileStation API so it needs no DSM admin account. Emits a resource per
+  share and per backing volume, so a capacity contract fires once per real
+  condition. Discovers API paths and version ranges at runtime through
+  SYNO.API.Info rather than hardcoding them, so it degrades across DSM releases.
+  Refuses to send credentials over cleartext, and establishes TLS before login
+  so a certificate failure never puts the password on the wire.
+repository: "https://github.com/khudgins/swamp-synology"
+paths:
+  base: manifest
+models:
+  - synology_storage.ts
+workflows: []
+vaults: []
+drivers: []
+reports: []
+additionalFiles:
+  - README.md
+  - LICENSE

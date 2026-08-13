@@ -1,0 +1,21 @@
+{
+  "name": "@khudgins/swamp-synology",
+  "version": "2026.08.12.1",
+  "exports": "./synology_storage.ts",
+  "tasks": {
+    "check": "deno check synology_storage.ts _lib/dsm/client.ts",
+    "test": "deno test --allow-net --allow-read",
+    "fmt": "deno fmt",
+    "fmt:check": "deno fmt --check",
+    "lint": "deno lint",
+    "ci": "deno task fmt:check && deno task lint && deno task check && deno task test"
+  },
+  "fmt": {
+    "exclude": [".github"]
+  },
+  "lint": {
+    "rules": {
+      "tags": ["recommended"]
+    }
+  }
+}

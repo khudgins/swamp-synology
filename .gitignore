@@ -1,0 +1,16 @@
+# Deno
+.deno/
+deno.lock
+
+# swamp working state — never belongs in an extension repo
+.swamp/
+
+# Certificates and credentials. The CA is not secret, but a stray privkey.pem
+# from a DSM export absolutely is, and they arrive in the same bundle.
+*.pem
+*.key
+*.p12
+*.pfx
+
+# macOS
+.DS_Store
