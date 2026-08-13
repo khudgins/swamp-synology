@@ -3,9 +3,13 @@
 Read-only [Synology DSM](https://www.synology.com/) inventory for
 [swamp](https://github.com/swamp-club/swamp).
 
-This provides a storage model for Synology devices. Right now, it doesn't do much. You can enumerate volumes and shared folders and the capacity of them. The plan is to expand on this to provide a legitimately useful Swamp extension that gives Swamp users a lever against their Synology boxes.
+This provides a storage model for Synology devices. Right now, it doesn't do
+much. You can enumerate volumes and shared folders and the capacity of them. The
+plan is to expand on this to provide a legitimately useful Swamp extension that
+gives Swamp users a lever against their Synology boxes.
 
-Most of the below was written by Claude. It got a little rambly at the end, but the details are accurate. - Keith
+Most of the below was written by Claude. It got a little rambly at the end, but
+the details are accurate. - Keith
 
 | Type                         | What it records                                          | Needs admin? |
 | ---------------------------- | -------------------------------------------------------- | ------------ |
@@ -68,8 +72,8 @@ session auth sends the account password on every run. Override deliberately with
 
 Ideally, the Synology device in question is provided a proper, signed cert, but
 most of us aren't going to go that far with our Synology boxes. In order to
-guarantee the rug hasn't been pulled from underneath, providing the cert to Swamp
-reduces that risk.
+guarantee the rug hasn't been pulled from underneath, providing the cert to
+Swamp reduces that risk.
 
 ## Setup
 
